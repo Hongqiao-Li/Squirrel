@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <style>
+      html,body {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-sm bg-dark nav-dark">
+     <a class="navbar-brand" href="" style="color:white">Squirrels Tracker</a>
+    <div class="collapse navbar-collapse" id="nav-menu">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/" style="color:white">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/map" style="color:white">Map</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sightings" style="color:white">Sightings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sightings/add" style="color:white">Add</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sightings/stats" style="color:white">Statistics</a>
+      </li>
+
+      </ul>
+      </div>
+  </nav>
+
+    <div class="container">
+      <br>
+      <h3> All squirrels:</h3>
+      <p>You can click on the squirrel id to see the detail information!</p>
+        <p><a class="btn btn-secondary" href="/sightings/add" role="button" tyle="background-color:black color:white">Add new squirrel</a></p>
+      <hr />
+      <div style="column-count:2">
+      <ul>
+      {% for squr in squrs %}
+          <li>ID: <a href="{{squr.unique_squirrel_id}}">{{ squr.unique_squirrel_id }}</a> Date: {{squr.date}}</li>
+      {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </body>
+</html>

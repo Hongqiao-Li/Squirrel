@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <style>
+      html,body {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-sm bg-dark nav-dark">
+     <a class="navbar-brand" href="" style="color:white">Squirrels Tracker</a>
+    <div class="collapse navbar-collapse" id="nav-menu">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/" style="color:white">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/map" style="color:white">Map</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sightings" style="color:white">Sightings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sightings/add" style="color:white">Add</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sightings/stats" style="color:white">Statistics</a>
+      </li>
+
+      </ul>
+      </div>
+  </nav>
+
+    <div class="container">
+      <br>
+      <h3>Statistics for the squirrel information:</h3>
+      <hr />
+
+        <h6>Total Squirrels Count:</h6>
+        <p> - Total:{{total}}</p>
+        <br>
+        <h6>Age Count:</h6>
+        <p> - Adult: {{age_adult_count}}
+            <br> - Juvenile: {{age_juvenile_count}}</p>
+        <br>
+        <h6>Shift Count:</h6>
+        <p> - AM: {{shift_AM_count}}
+        <br> - PM: {{shift_PM_count}}</p>
+        <br>
+        <h6>Location Count:</h6>
+        <p> - Above Ground: {{location_AG_count}}
+        <br> - Ground Plane: {{shift_GP_count}}</p>
+        <br>
+        <h6>Primary Fur Color Count:</h6>
+        <p> - Black: {{fur_black_count}}
+        <br> - Cinnamon: {{fur_cinnamon_count}}
+        <br> - Gray: {{fur_gray_count}}</p>
+    </div>
+  </body>
+</html>
