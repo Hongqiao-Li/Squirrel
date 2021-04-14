@@ -1,4 +1,4 @@
-# Squirrel Tracker Project
+# Squirrel Sighting Tracking and Visualization Webapplication
 This Squirrel Tracker Project is for the final project of the course Tools for Analytics mainly depending on the Django web framework.
 <br>Contributors: Hongqiao Li, Jiaqi Zhang
 <br>
