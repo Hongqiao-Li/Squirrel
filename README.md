@@ -3,7 +3,7 @@ This Squirrel Tracker Project is for the final project of the course Tools for A
 <br>Contributors: Hongqiao Li, Jiaqi Zhang
 <br>
 ## Project Discrption
-The purpose of the project is to help keep tracking of all the squirrels and start with the squirrel information information in Central Park. The project has now covered all the squirrels in Central Park and the user is later allowed to edit and add any squirrel information whenever any updating is required. Also, the location of squirrels is shown on the [OpenStreets map](https://www.openstreetmap.org/about/). More guidance is given on the [Squirrel Tracker home page](www.google.com). Pre-existing squirrel data comes from [2018 Central Park Squirrel Census](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw) data.
+The purpose of the project is to help keep tracking of all the squirrels and start with the squirrel information in Central Park. The project has now covered all the squirrels in Central Park and the user is later allowed to edit and add any squirrel information whenever any updating is required. Also, the location of squirrels is shown on the [OpenStreets map](https://www.openstreetmap.org/about/). More guidance is given on the [Squirrel Tracker home page](www.google.com). Pre-existing squirrel data comes from [2018 Central Park Squirrel Census](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw) data.
 ### Main Functions:
 #### Map
 Shows a map that displays the location of the squirrel sightings on an OpenStreets map. View [map](https://tfa-2021-spring-jz3284.df.r.appspot.com/map).
