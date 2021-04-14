@@ -17,3 +17,4 @@ class Command(BaseCommand):
                 row = [getattr(i, field.name) for field in fields]
                 writer.writerow(row)
             f.close()
+        print('Export successfully!')
