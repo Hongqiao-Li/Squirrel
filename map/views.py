@@ -8,5 +8,5 @@ from sightings.models import SqurInfo
 
 def map(request):
     context = {"sightings": SqurInfo.objects.all()[:100]}
-    return render(request, 'map/map.html', context)
+    return render(request, 'map/mapshow.html', context)
 
