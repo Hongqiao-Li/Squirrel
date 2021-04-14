@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse, redirect
+from django.shortcuts import render, redirect
 from .models import SqurInfo
 from .forms import SqurForm
 from django.shortcuts import get_object_or_404
@@ -10,7 +10,7 @@ from django.db.models import Count
 def squrshow(request):
     squrs = SqurInfo.objects.all()
     context = {'squrs': squrs}
-    return render(request, 'sightings/squrshow.html', context)
+    return render(request, 'sightings/show.html', context)
 
 
 def detail(request, squr_id):
@@ -24,7 +24,7 @@ def detail(request, squr_id):
         form = SqurForm(instance=squr)
     context = {'form': form}
 
-    return render(request, 'sightings/squrdetail.html', context)
+    return render(request, 'sightings/detail.html', context)
 
 
 def squradd(request):
@@ -36,7 +36,7 @@ def squradd(request):
     else:
         form = SqurForm()
     context = {'form': form}
-    return render(request, 'sightings/squradd.html', context)
+    return render(request, 'sightings/add.html', context)
 
 
 def stats(request):
@@ -60,4 +60,3 @@ def stats(request):
     }
 
     return render(request, 'sightings/stats.html', context)
-
